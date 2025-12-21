@@ -16,14 +16,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
-        
-
-        // $this->call([
-        //     // AdminSeeder::class, // (If not already run)
-        //     CarTypeSeeder::class,
-        //     CarSeeder::class,
-        //     LeadSeeder::class,
-        // ]);
+        $this->call([
+            AdminSeeder::class,
+            CarTypeSeeder::class,
+            CarSeeder::class,
+            LeadSeeder::class,
+        ]);
         // User::factory(10)->create();
 
         // User::factory()->create([
