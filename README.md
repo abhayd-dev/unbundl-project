@@ -1,6 +1,6 @@
-# Unbundl Assessment - CarsDekho Clone
+# Unbundl Assessment - CarsDekho Reference
 
-This is a dynamic car listing website developed as an assessment for the Junior PHP Developer role. The project follows the MVC architecture using Laravel 11 and Bootstrap 5.
+This is a dynamic car listing website developed as an assessment using Laravel 12 and Bootstrap 5.
 
 ## 🚀 Features
 - **Frontend:** Dynamic Homepage (Banners, Featured Cars, Latest Cars).
@@ -8,10 +8,9 @@ This is a dynamic car listing website developed as an assessment for the Junior 
 - **Lead Generation:** User inquiry form with validation and database storage.
 - **Admin Panel:** Full CRUD for Cars, Banners, Leads, Pages, and Settings.
 - **PDF Brochure:** Download car details as PDF.
-- **Optimized Performance:** Implemented Eager Loading and Global View Composers.
 
 ## 🛠 Tech Stack
-- **Backend:** Laravel 11 (PHP 8.2+)
+- **Backend:** Laravel 12 
 - **Frontend:** Blade Templates, Bootstrap 5
 - **Database:** MySQL
 - **Tools:** DomPDF (for brochures)
@@ -19,5 +18,5 @@ This is a dynamic car listing website developed as an assessment for the Junior 
 ## ⚙️ Installation Guide
 1. **Clone the repository:**
    ```bash
-   git clone [YOUR_GITHUB_LINK_HERE]
-   cd [FOLDER_NAME]
+git clone [https://github.com/abhayd-dev/unbundl-project.git](https://github.com/abhayd-dev/unbundl-project.git)
+cd unbundl-project
