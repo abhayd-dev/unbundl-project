@@ -17,7 +17,7 @@ This is a dynamic car listing website developed as an assessment using Laravel 1
 
 ## ⚙️ Installation Guide
 **1. Clone the Repository**
-    ```bash
+bash
     git clone https://github.com/abhayd-dev/unbundl-project.git
     cd unbundl-project
 
