@@ -15,7 +15,6 @@
     RewriteRule ^ %1 [L,R=301]
 
     # Handle Front Controller...
-    # Yahi wo magic line hai jo index.php hatati hai
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
