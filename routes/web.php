@@ -16,25 +16,21 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
 
-// Ye temporary route hai Database setup ke liye
 Route::get('/run-setup', function () {
     try {
-        // 1. Tables Banao (Migrate)
         Artisan::call('migrate --force');
         
-        // 2. Data Daalo (Seed) - Agar pehle se data hai toh error ignore karega
         try {
             Artisan::call('db:seed --force');
         } catch (\Exception $e) {
-            // Seed shayad fail ho agar data pehle se hai, koi baat nahi
         }
 
         // 3. Images link karo
         Artisan::call('storage:link');
 
-        return '<h1>✅ Setup Complete!</h1> <p>Tables created, Seed run, Storage linked.</p> <a href="/login">Go to Login</a>';
+        return '<h1>Setup Complete!</h1> <p>Tables created, Seed run, Storage linked.</p> <a href="/login">Go to Login</a>';
     } catch (\Exception $e) {
-        return '<h1>❌ Error</h1> <p>' . $e->getMessage() . '</p>';
+        return '<h1> Error</h1> <p>' . $e->getMessage() . '</p>';
     }
 });
 
