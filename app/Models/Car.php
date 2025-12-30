@@ -11,11 +11,11 @@ class Car extends Model
         'car_type_id', 
         'name', 
         'price_range', 
-        'condition',
         'image', 
         'is_most_searched', 
         'is_latest', 
-        'is_active'
+        'is_active',
+        'condition',
     ];
 
     public function type(): BelongsTo

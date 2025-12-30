@@ -34,6 +34,7 @@ class CarController extends Controller
             'name'         => 'required|string|max:255',
             'car_type_id'  => 'required|exists:car_types,id',
             'price_range'  => 'required|string',
+            'condition' => 'required',
             'image'        => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
         ]);
 
@@ -41,6 +42,7 @@ class CarController extends Controller
         $car->name = $request->name;
         $car->car_type_id = $request->car_type_id;
         $car->price_range = $request->price_range;
+        $car->condition = $request->condition;
         $car->is_most_searched = $request->has('is_most_searched');
         $car->is_latest = $request->has('is_latest');
         $car->is_active = $request->has('is_active');
@@ -70,6 +72,7 @@ class CarController extends Controller
             'name'         => 'required|string|max:255',
             'car_type_id'  => 'required|exists:car_types,id',
             'price_range'  => 'required|string',
+            'condition'    => 'required',
             'image'        => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048', //2 MB img
         ]);
 
@@ -77,6 +80,7 @@ class CarController extends Controller
         $car->car_type_id = $request->car_type_id;
         $car->price_range = $request->price_range;
         $car->is_most_searched = $request->has('is_most_searched');
+        $car->condition = $request->condition;
         $car->is_latest = $request->has('is_latest');
         $car->is_active = $request->has('is_active');
 
